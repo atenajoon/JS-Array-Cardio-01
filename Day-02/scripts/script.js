@@ -39,12 +39,16 @@
       // console.log({findIndex});
 
       // to delete the comment that we found:
-      comments.splice(findIndex, 1);
+      // comments.splice(findIndex, 1);
       console.table(comments);
-      console.log({findIndex});
+      // console.log({findIndex});
 
-      // or, we can create a new array:
-      
+      // or, we can create a new array, copy the comments before and after the findIndex and spread them into the new array:
+      const newComments = [
+        ...comments.slice(0, findIndex),
+        ...comments.slice(findIndex + 1)
+      ];
+      console.table(newComments);
 
       // Find the comment with this ID
       // delete the comment with the ID of 823423
