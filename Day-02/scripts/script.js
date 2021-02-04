@@ -1,5 +1,6 @@
 
     // ## Array Cardio Day 2
+    // https://courses.wesbos.com/account/access/5ffc999f05cf86435dcdb554/view/194130101
 
     const people = [
         { name: 'Wes', year: 1988 },
@@ -30,6 +31,8 @@
       // Array.prototype.find()
       // Find is like filter, but instead returns just the one you are looking for
       // find the comment with the ID of 823423
+
+      // Find the comment with this ID
       const isFound = comments.find(comment => comment.id === 823423)
       console.log({isFound});
        
@@ -38,7 +41,7 @@
       // console.table(comments);
       // console.log({findIndex});
 
-      // to delete the comment that we found:
+      // delete the comment with the ID of 823423
       // comments.splice(findIndex, 1);
       console.table(comments);
       // console.log({findIndex});
@@ -50,5 +53,7 @@
       ];
       console.table(newComments);
 
-      // Find the comment with this ID
-      // delete the comment with the ID of 823423
+
+// Atena... End
+
+   
