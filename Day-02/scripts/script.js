@@ -20,18 +20,19 @@
   
       // Array.prototype.some() // is at least one person 19 or older?
       // some() is a function that will check the condition for every single item that we have
-      const isAdault = people.some(person => ((new Date()).getFullYear() - person.year) >= 19 )
-   
-      console.log({isAdault})
+      const isAdault = people.some(person => ((new Date()).getFullYear() - person.year) >= 19 )  
+      console.log({isAdault});
 
       // Array.prototype.every() // is everyone 19 or older?
       const allAdault = people.every(person => ((new Date()).getFullYear() - person.year) >= 19 )
-   
-      console.log({allAdault})
-      
+      console.log({allAdault});
+
       // Array.prototype.find()
       // Find is like filter, but instead returns just the one you are looking for
       // find the comment with the ID of 823423
+      const isFound = comments.find(comment => comment.id === 823423)
+      console.log({isFound});
+      
   
       // Array.prototype.findIndex()
       // Find the comment with this ID
