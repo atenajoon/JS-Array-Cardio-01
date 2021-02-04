@@ -32,8 +32,19 @@
       // find the comment with the ID of 823423
       const isFound = comments.find(comment => comment.id === 823423)
       console.log({isFound});
-      
-  
+       
       // Array.prototype.findIndex()
+      const findIndex = comments.findIndex(comment => comment.id === 823423);
+      // console.table(comments);
+      // console.log({findIndex});
+
+      // to delete the comment that we found:
+      comments.splice(findIndex, 1);
+      console.table(comments);
+      console.log({findIndex});
+
+      // or, we can create a new array:
+      
+
       // Find the comment with this ID
       // delete the comment with the ID of 823423
